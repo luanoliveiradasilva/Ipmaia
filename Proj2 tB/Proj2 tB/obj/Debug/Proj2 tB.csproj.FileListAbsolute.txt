@@ -1,0 +1,10 @@
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\Proj2 tB\Proj2 tB\bin\Debug\Proj2 tB.exe.config
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\Proj2 tB\Proj2 tB\bin\Debug\Proj2 tB.exe
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\Proj2 tB\Proj2 tB\bin\Debug\Proj2 tB.pdb
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\Proj2 tB\Proj2 tB\obj\Debug\Proj2 tB.csproj.AssemblyReference.cache
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\Proj2 tB\Proj2 tB\obj\Debug\Proj2_tB.Form1.resources
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\Proj2 tB\Proj2 tB\obj\Debug\Proj2_tB.Properties.Resources.resources
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\Proj2 tB\Proj2 tB\obj\Debug\Proj2 tB.csproj.GenerateResource.cache
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\Proj2 tB\Proj2 tB\obj\Debug\Proj2 tB.csproj.CoreCompileInputs.cache
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\Proj2 tB\Proj2 tB\obj\Debug\Proj2 tB.exe
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\Proj2 tB\Proj2 tB\obj\Debug\Proj2 tB.pdb
