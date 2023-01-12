@@ -41,6 +41,8 @@ namespace Proj2_tB
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.buttonCP1 = new System.Windows.Forms.Button();
+            this.buttonCP2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +59,8 @@ namespace Proj2_tB
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.buttonCP2);
+            this.tabPage2.Controls.Add(this.buttonCP1);
             this.tabPage2.Controls.Add(this.buttonVP);
             this.tabPage2.Controls.Add(this.comboBoxE2);
             this.tabPage2.Controls.Add(this.comboBoxE1);
@@ -82,7 +86,7 @@ namespace Proj2_tB
             this.buttonVP.Name = "buttonVP";
             this.buttonVP.Size = new System.Drawing.Size(122, 51);
             this.buttonVP.TabIndex = 9;
-            this.buttonVP.Text = "Verificar Prémio";
+            this.buttonVP.Text = "Construtor Defeito";
             this.buttonVP.UseCompatibleTextRendering = true;
             this.buttonVP.UseVisualStyleBackColor = true;
             this.buttonVP.Click += new System.EventHandler(this.buttonVP_Click);
@@ -170,6 +174,30 @@ namespace Proj2_tB
             this.label8.TabIndex = 0;
             this.label8.Text = "Números:";
             // 
+            // buttonCP1
+            // 
+            this.buttonCP1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCP1.Location = new System.Drawing.Point(431, 94);
+            this.buttonCP1.Name = "buttonCP1";
+            this.buttonCP1.Size = new System.Drawing.Size(122, 51);
+            this.buttonCP1.TabIndex = 10;
+            this.buttonCP1.Text = "Construtor Param 1";
+            this.buttonCP1.UseCompatibleTextRendering = true;
+            this.buttonCP1.UseVisualStyleBackColor = true;
+            this.buttonCP1.Click += new System.EventHandler(this.buttonCP1_Click);
+            // 
+            // buttonCP2
+            // 
+            this.buttonCP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCP2.Location = new System.Drawing.Point(431, 172);
+            this.buttonCP2.Name = "buttonCP2";
+            this.buttonCP2.Size = new System.Drawing.Size(122, 51);
+            this.buttonCP2.TabIndex = 11;
+            this.buttonCP2.Text = "Construtor Param 2";
+            this.buttonCP2.UseCompatibleTextRendering = true;
+            this.buttonCP2.UseVisualStyleBackColor = true;
+            this.buttonCP2.Click += new System.EventHandler(this.buttonCP2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,6 +206,7 @@ namespace Proj2_tB
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
@@ -199,6 +228,8 @@ namespace Proj2_tB
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button buttonCP2;
+        private System.Windows.Forms.Button buttonCP1;
     }
 }
 

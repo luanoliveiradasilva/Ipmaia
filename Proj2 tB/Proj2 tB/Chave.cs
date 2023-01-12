@@ -18,6 +18,33 @@ namespace Proj2_tB
             numeros = new int[5];
             estrelas = new int[2];
         }
+        public Chave(int[] nNumeros, int[] nEstrelas)
+        {
+            if(VerificarVetor(nNumeros) && VerificarVetor(nEstrelas))
+            {
+                numeros = nNumeros;
+                estrelas = nEstrelas;
+            }
+            else
+            {
+                throw new Exception("Dados errados.");
+            }
+ 
+        }
+
+        public Chave(int n1, int n2, int n3, int n4, int n5, int e1, int e2 )
+        {
+            numeros = new int[5];
+            estrelas = new int[2];
+
+            numeros[0] = n1;
+            numeros[1] = n2;
+            numeros[2] = n3;
+            numeros[3] = n4;
+            numeros[4] = n5;
+            estrelas[0] = e1;
+            estrelas[1] = e2;
+        }
 
         //METODOS
         public void SetNumeros(int[] nNumeros)
@@ -37,7 +64,20 @@ namespace Proj2_tB
             return estrelas;
         }
 
-
+        private bool VerificarVetor(int[] valores)
+        {
+            for(int indice = 0; indice < valores.Length; indice++)
+            {
+                for (int j = indice + 1; j < valores.Length; j++)
+                {
+                    if(valores[j] == valores[j])
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
         public override string ToString()
         {
             string chave = "";
