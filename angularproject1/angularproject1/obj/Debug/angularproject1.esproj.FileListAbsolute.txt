@@ -1,0 +1,2 @@
+G:\desenv\Jogos digitais - ipmaia\Ipmaia\angularproject1\angularproject1\obj\Debug\angularproject1.esproj.SuggestedBindingRedirects.cache
+G:\desenv\Jogos digitais - ipmaia\Ipmaia\angularproject1\angularproject1\obj\Debug\angularproject1.esproj.CoreCompileInputs.cache

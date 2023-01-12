@@ -1,0 +1,11 @@
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\GestãoProdutos tB\GestãoProdutos tB\bin\Debug\GestãoProdutos tB.exe.config
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\GestãoProdutos tB\GestãoProdutos tB\bin\Debug\GestãoProdutos tB.exe
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\GestãoProdutos tB\GestãoProdutos tB\bin\Debug\GestãoProdutos tB.pdb
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\GestãoProdutos tB\GestãoProdutos tB\obj\Debug\GestãoProdutos tB.csproj.AssemblyReference.cache
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\GestãoProdutos tB\GestãoProdutos tB\obj\Debug\GestãoProdutos_tB.Form1.resources
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\GestãoProdutos tB\GestãoProdutos tB\obj\Debug\GestãoProdutos_tB.Properties.Resources.resources
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\GestãoProdutos tB\GestãoProdutos tB\obj\Debug\GestãoProdutos tB.csproj.GenerateResource.cache
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\GestãoProdutos tB\GestãoProdutos tB\obj\Debug\GestãoProdutos tB.csproj.CoreCompileInputs.cache
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\GestãoProdutos tB\GestãoProdutos tB\obj\Debug\GestãoProdutos tB.exe
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\GestãoProdutos tB\GestãoProdutos tB\obj\Debug\GestãoProdutos tB.pdb
+C:\Users\d011495\OneDrive - Maieutica\2022-2023\1o Semestre\PMJD - LP\GestãoProdutos tB\GestãoProdutos tB\obj\Debug\GestãoProdutos_tB.FormVerProduto.resources
