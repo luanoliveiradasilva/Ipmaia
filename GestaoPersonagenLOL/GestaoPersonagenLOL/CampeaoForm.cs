@@ -26,9 +26,8 @@ namespace GestaoPersonagenLOL
             Campeao campeao = acessoController();
 
             CampeaoController campeaoController = new CampeaoController(campeao);
-            
-            MessageBox.Show(campeaoController.exibirDadosDoCampeao().ToString());
 
+            campeaoController.cadastrarCampeao();
         }
 
 
@@ -53,6 +52,13 @@ namespace GestaoPersonagenLOL
             }
 
             return campeao;
+        }
+
+        private void CampeaoForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide(); // Quando clicar no botao de cadastro, ira fechar a tela do form.
+            Form1 form1 = new Form1();
+            form1.Show();
         }
     }
 }

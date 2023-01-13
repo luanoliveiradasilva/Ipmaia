@@ -2,6 +2,7 @@
 {
     interface CampeaoInterface
     {
+        // Contrato
         void cadastrarCampeao();
     }
 }

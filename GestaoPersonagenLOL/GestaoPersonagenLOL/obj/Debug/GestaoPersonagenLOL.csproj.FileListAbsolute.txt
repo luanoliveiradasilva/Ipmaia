@@ -10,3 +10,16 @@ G:\desenv\Jogos digitais - ipmaia\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL
 G:\desenv\Jogos digitais - ipmaia\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.pdb
 G:\desenv\Jogos digitais - ipmaia\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.CampeaoForm.resources
 G:\desenv\Jogos digitais - ipmaia\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.Main.resources
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\bin\Debug\GestaoPersonagenLOL.exe.config
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\bin\Debug\GestaoPersonagenLOL.exe
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\bin\Debug\GestaoPersonagenLOL.pdb
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.csproj.AssemblyReference.cache
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.csproj.SuggestedBindingRedirects.cache
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.CampeaoForm.resources
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.Properties.Resources.resources
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.csproj.GenerateResource.cache
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.csproj.CoreCompileInputs.cache
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.exe
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.pdb
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.CampeaoController.resources
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.Form1.resources
