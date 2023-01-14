@@ -7,19 +7,19 @@ namespace GestaoPersonagenLOL
 {
 
    
-    public class CampeaoController : CampeaoInterface
+    public class RegistrarCampeoes : CampeaoInterface
     {
 
         // Extensiação da Interface Campeao 
         private Campeao dadosCampeao;
-        private Habilidade dadosHabilidade;
-
+        private Habilidade habilidade;
 
         //StringBuilder para concatenar as informacoes, por exemplo, titulo, titulo2 ou informacoes dos dados dos campeaoes.
         StringBuilder concatenarString = new StringBuilder();
 
         //Mostrar em qual diretorio sera salvo e indicar o nome que quer seja salvo.
-        String file = @"C:\Users\ddkao\Documents\dadosDosCampeaos.csv";
+        String file = @"D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\dadosDosCampeaos.csv";
+
 
         //Utilizado para separar informacoes por ponto e virgula.
         /* Definido como ponto e virgula pora questoes de padrao do excel, 
@@ -29,26 +29,16 @@ namespace GestaoPersonagenLOL
 
 
         // Contrutor da classe CampeaoController com inserção dos objetos parametrizado.
-        public CampeaoController(Campeao dadosCampeao, Habilidade habilidade)
+        public RegistrarCampeoes(Campeao dadosCampeao, Habilidade habilidade)
         {
             this.dadosCampeao = dadosCampeao;
-            this.dadosHabilidade = habilidade;
-            
-        }
-
-        private void cadastrarHabilidade()
-        {
-            string[] dadosHabilidade =
-            {
-               this.dadosHabilidade.getNomeHabilidade()
-               
-            };
-
-            this.concatenarString.AppendLine(string.Join(this.separador, dadosHabilidade));
+            this.habilidade = habilidade;
 
         }
+
+
         //Override da função da interface
-        public void cadastrarCampeao()
+        public void registrarCampeoes()
         {
             try
             { 
@@ -57,22 +47,14 @@ namespace GestaoPersonagenLOL
                     dadosCampeao.getNome(),
                     dadosCampeao.getFuncao(),
                     dadosCampeao.getDificuldade(),
-                    dadosCampeao.getDescricao()
+                    dadosCampeao.getDescricao(),
+                    habilidade.getNomeHabilidade(),
                 };
 
                 this.concatenarString.AppendLine(string.Join(this.separador, dadosCampeoes));
 
-                /*Verifica a existencia do arquivo no diretorio, caso nao existe nada, sera criado um arquivo 
-                novo e adicionado o valor inicial.*/
-                if (File.Exists(this.file))
-                {
-                    this.concatenarString.AppendLine(string.Join(this.separador, dadosCampeoes));
-                cadastrarHabilidade();
-
-                }
-
-
                 File.AppendAllText(this.file, this.concatenarString.ToString());
+
                 MessageBox.Show("Campeão cadastrado! ");
 
             } catch (Exception ex) {

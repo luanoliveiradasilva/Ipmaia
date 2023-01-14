@@ -23,22 +23,32 @@ namespace GestaoPersonagenLOL
 
         private void btnCadastrarCampeao_Click(object sender, EventArgs e)
         {
-            Campeao campeao = acessoController();
-
-
+            Campeao campeao = acessoPersonagem();
             Habilidade habilidade = acessoHabilidade();
-            CampeaoController campeaoController = new CampeaoController(campeao, habilidade);
 
-            campeaoController.cadastrarCampeao();
+            RegistrarCampeoes registrarCampeoes = new RegistrarCampeoes(campeao, habilidade);
+
+            registrarCampeoes.registrarCampeoes();
         }
+
         private Habilidade acessoHabilidade()
         {
             Habilidade habilidade = new Habilidade();
-            habilidade.setNomeHabilidade(txtNomeHabilidade.Text);
+            try
+            {
+                //Settando valores dos inputs texts nas variaveis que estão em campeão.
+                habilidade.setNomeHabilidade(txtNomeHabilidade.Text);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
             return habilidade;
         }
 
-        private Campeao acessoController()
+        private Campeao acessoPersonagem()
         {
 
             Campeao campeao = new Campeao(); // Criação de objeto de campeão para adição de dados

@@ -12,7 +12,7 @@ namespace GestaoPersonagenLOL
             InitializeComponent();
         }
 
-        String file = @"C:\Users\ddkao\Documents\dadosDosCampeaos.csv";
+        String file = @"D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\dadosDosCampeaos.csv";
 
         private void campeaoToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -27,8 +27,6 @@ namespace GestaoPersonagenLOL
             //Verificar a existencia do arquivo no diretorio.
             if (File.Exists(this.file))
             {
-                //Ler o arquivo no diretorio
-                string[] linhas = File.ReadAllLines(this.file);
                 
                 //Criando um DataTable
                 DataTable dadosDaTabela = new DataTable();

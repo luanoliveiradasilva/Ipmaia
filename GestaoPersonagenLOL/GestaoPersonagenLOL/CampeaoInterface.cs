@@ -3,6 +3,6 @@
     interface CampeaoInterface
     {
         // Contrato
-        void cadastrarCampeao();
+        void registrarCampeoes();
     }
 }
