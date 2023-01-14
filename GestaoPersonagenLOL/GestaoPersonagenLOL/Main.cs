@@ -12,7 +12,7 @@ namespace GestaoPersonagenLOL
             InitializeComponent();
         }
 
-        String file = @"D:\Documents\Jogos Digitais\Programação\Ipmaia\GestãoProdutos tB\dadosDosCampeaos.csv";
+        String file = @"C:\Users\ddkao\Documents\dadosDosCampeaos.csv";
 
         private void campeaoToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -32,6 +32,7 @@ namespace GestaoPersonagenLOL
                 
                 //Criando um DataTable
                 DataTable dadosDaTabela = new DataTable();
+                dadosDaTabela.Columns.Add(new DataColumn(Titulos.Habilidades, typeof(string)));
 
                 //Lendo Todas as linhas do arquivo CSV
                 string[] Linha = File.ReadAllLines(this.file);
@@ -80,8 +81,10 @@ namespace GestaoPersonagenLOL
                 dataGridView1.Columns[1].HeaderText = Titulos.Funcao;
                 dataGridView1.Columns[2].HeaderText = Titulos.Dificuldade;
                 dataGridView1.Columns[3].HeaderText = Titulos.Descricao;
+                dataGridView1.Columns[4].HeaderText = Titulos.Habilidades;
+
             }
-            
+
         }
     }
 }

@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace GestaoPersonagenLOL
 {
-    internal class Habilidade
+    public class Habilidade
     {
-        private string nomeDaHabilidade;
-        private string comandoDeExecucaoDaHabilidade;
-        private string descricaoDaHabilidade;
+       private string nomeHabilidade;
+
+        public void setNomeHabilidade(string nomeHabilidade) {
+            this.nomeHabilidade = nomeHabilidade;
+        }
+        public string getNomeHabilidade() {
+            return this.nomeHabilidade;
+        }
 
     }
 }

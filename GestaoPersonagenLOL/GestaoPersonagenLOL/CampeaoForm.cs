@@ -25,11 +25,18 @@ namespace GestaoPersonagenLOL
         {
             Campeao campeao = acessoController();
 
-            CampeaoController campeaoController = new CampeaoController(campeao);
+
+            Habilidade habilidade = acessoHabilidade();
+            CampeaoController campeaoController = new CampeaoController(campeao, habilidade);
 
             campeaoController.cadastrarCampeao();
         }
-
+        private Habilidade acessoHabilidade()
+        {
+            Habilidade habilidade = new Habilidade();
+            habilidade.setNomeHabilidade(txtNomeHabilidade.Text);
+            return habilidade;
+        }
 
         private Campeao acessoController()
         {

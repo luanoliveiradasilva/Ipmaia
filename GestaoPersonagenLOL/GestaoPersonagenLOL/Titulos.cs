@@ -14,6 +14,7 @@ namespace GestaoPersonagenLOL
         public static string Funcao = "Funcão";
         public static string Dificuldade = "Dificuldade";
         public static string Descricao = "Descricão";
+        public static string Habilidades = "Habilidades";
     } 
 
 }

@@ -12,13 +12,14 @@ namespace GestaoPersonagenLOL
 
         // Extensiação da Interface Campeao 
         private Campeao dadosCampeao;
+        private Habilidade dadosHabilidade;
 
 
         //StringBuilder para concatenar as informacoes, por exemplo, titulo, titulo2 ou informacoes dos dados dos campeaoes.
         StringBuilder concatenarString = new StringBuilder();
 
         //Mostrar em qual diretorio sera salvo e indicar o nome que quer seja salvo.
-        String file = @"D:\Documents\Jogos Digitais\Programação\Ipmaia\GestãoProdutos tB\dadosDosCampeaos.csv";
+        String file = @"C:\Users\ddkao\Documents\dadosDosCampeaos.csv";
 
         //Utilizado para separar informacoes por ponto e virgula.
         /* Definido como ponto e virgula pora questoes de padrao do excel, 
@@ -28,11 +29,24 @@ namespace GestaoPersonagenLOL
 
 
         // Contrutor da classe CampeaoController com inserção dos objetos parametrizado.
-        public CampeaoController(Campeao dadosCampeao)
+        public CampeaoController(Campeao dadosCampeao, Habilidade habilidade)
         {
             this.dadosCampeao = dadosCampeao;
+            this.dadosHabilidade = habilidade;
+            
         }
 
+        private void cadastrarHabilidade()
+        {
+            string[] dadosHabilidade =
+            {
+               this.dadosHabilidade.getNomeHabilidade()
+               
+            };
+
+            this.concatenarString.AppendLine(string.Join(this.separador, dadosHabilidade));
+
+        }
         //Override da função da interface
         public void cadastrarCampeao()
         {
@@ -53,10 +67,12 @@ namespace GestaoPersonagenLOL
                 if (File.Exists(this.file))
                 {
                     this.concatenarString.AppendLine(string.Join(this.separador, dadosCampeoes));
-                }
-                
-                File.AppendAllText(this.file, this.concatenarString.ToString());
+                cadastrarHabilidade();
 
+                }
+
+
+                File.AppendAllText(this.file, this.concatenarString.ToString());
                 MessageBox.Show("Campeão cadastrado! ");
 
             } catch (Exception ex) {
