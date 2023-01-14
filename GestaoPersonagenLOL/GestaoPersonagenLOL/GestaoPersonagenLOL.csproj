@@ -97,6 +97,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="icon\LoL_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="files\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

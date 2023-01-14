@@ -41,7 +41,7 @@ namespace GestaoPersonagenLOL
             {           
                    //Settando valores dos inputs texts nas variaveis que estão em campeão.
                 campeao.setNome(txtNome.Text);
-                campeao.setFuncao(txtFuncao.Text);
+                campeao.setFuncao(cbcFuncao.Text);
                 campeao.setDificuldade(cbcDificuldade.Text);
                 campeao.setDescricao(txtDescricao.Text);
                 

@@ -43,8 +43,6 @@ namespace GestaoPersonagenLOL
                     //Por exemplo, ele vai lendo um texto, e quando achar um ponto e virgula
                     //ele pega o texto e joga na outra posição do array temp, e assim por diante
                     //até chegar no final da linha
-
-                    //Separando os campos e adicionado na data
                     string[] campos = Linha[i].Split(Convert.ToChar(";"));
 
                     //Um datable precisa de colunas
@@ -56,9 +54,15 @@ namespace GestaoPersonagenLOL
                         for (int j = 0; j < campos.Length; j++)
                         {
                             //Criando uma coluna
-                            DataColumn col = new DataColumn();
+                            DataColumn colunas = new DataColumn();
+
+                            //coluna.Columns["Column1"].HeaderText = Titulos.Nome;
+                            //coluna.HeaderText = campos[1] = Titulos.Funcao;
+                            //coluna.HeaderText = campos[2] = Titulos.Dificuldade;
+                            //coluna.HeaderText = campos[3] = Titulos.Descricao;
+
                             //Adicionando a coluna criada ao datatable
-                            dadosDaTabela.Columns.Add(col);
+                            dadosDaTabela.Columns.Add(colunas);
                         }
                     }
 
@@ -70,7 +74,12 @@ namespace GestaoPersonagenLOL
                 //Depois de montado o datatable, vamos falar para o grid
                 //que a fonte de dados para ele exibir, será o datatable que 
                 //a gente acabou de criar
-                dataGridView2.DataSource = dadosDaTabela;
+                dataGridView1.DataSource = dadosDaTabela;
+
+                dataGridView1.Columns[0].HeaderText = Titulos.Nome;
+                dataGridView1.Columns[1].HeaderText = Titulos.Funcao;
+                dataGridView1.Columns[2].HeaderText = Titulos.Dificuldade;
+                dataGridView1.Columns[3].HeaderText = Titulos.Descricao;
             }
             
         }

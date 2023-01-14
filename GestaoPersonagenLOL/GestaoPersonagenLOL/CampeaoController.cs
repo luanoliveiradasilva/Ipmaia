@@ -36,8 +36,6 @@ namespace GestaoPersonagenLOL
         //Override da função da interface
         public void cadastrarCampeao()
         {
-
-
             try
             { 
                 //Execucao dos getters nos dados para atribuir a uma varivel do tipo list.
@@ -48,45 +46,23 @@ namespace GestaoPersonagenLOL
                     dadosCampeao.getDescricao()
                 };
 
+                this.concatenarString.AppendLine(string.Join(this.separador, dadosCampeoes));
 
                 /*Verifica a existencia do arquivo no diretorio, caso nao existe nada, sera criado um arquivo 
-                novo e adicionado o valor inicial mais o titulos. Se existir, tem que somente adicionar o valor dos dados
-                dos campeoes, sem a necessidade de adicionar os titulos novamente.*/
+                novo e adicionado o valor inicial.*/
                 if (File.Exists(this.file))
                 {
-                    string[] linhas = File.ReadAllLines(this.file);
-                    if (linhas[0].Contains(Titulos.Nome) || linhas[0].Contains(Titulos.Funcao))
-                    {
-                        this.concatenarString.AppendLine(string.Join(this.separador, dadosCampeoes));
-
-                    }
-                }
-                else
-                {
-                    //Junta os separadores ponto e virgula, com os titulo ou dados dos campeoes
-                    cadastrarTitulo();
                     this.concatenarString.AppendLine(string.Join(this.separador, dadosCampeoes));
                 }
-
+                
                 File.AppendAllText(this.file, this.concatenarString.ToString());
+
+                MessageBox.Show("Campeão cadastrado! ");
+
             } catch (Exception ex) {
 
-                MessageBox.Show("Nao foi possivel cadastrar campeao");
+                MessageBox.Show("Não foi possível cadastrar campeão", ex.ToString());
             }        
         }
-
-        private void cadastrarTitulo()
-        {
-
-            string[] titulo = { 
-                Titulos.Nome, 
-                Titulos.Funcao, 
-                Titulos.Dificuldade, 
-                Titulos.Descricao
-            };
-
-            this.concatenarString.AppendLine(string.Join(this.separador, titulo));
-        }
-
     }
 }
