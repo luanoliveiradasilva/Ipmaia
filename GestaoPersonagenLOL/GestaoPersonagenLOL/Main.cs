@@ -2,45 +2,54 @@
 using System.IO;
 using System.Data;
 using System.Windows.Forms;
+using System.Drawing.Text;
 
 namespace GestaoPersonagenLOL
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
-        public Form1()
+        public Main()
         {
             InitializeComponent();
         }
 
-        String file = @"D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\dadosDosCampeaos.csv";
+        CriarArquivos criarArquivos = new CriarArquivos();
 
         private void campeaoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide(); // Quando clicar no botao de cadastro, ira fechar a tela inicial.
+            // Vai criar diretório inicial
+            criarArquivos.criarDiretorio();
+            // Quando clicar no botao de cadastro, ira fechar a tela inicial.
+            this.Hide();
             CampeaoForm campeaoForShow = new CampeaoForm();
             campeaoForShow.Show();
         }
+
 
         private void Main_Load(object sender, EventArgs e)
         {
 
             //Verificar a existencia do arquivo no diretorio.
-            if (File.Exists(this.file))
+            if (File.Exists(criarArquivos.lerArquivo()))
             {
                 
                 //Criando um DataTable
                 DataTable dadosDaTabela = new DataTable();
-                dadosDaTabela.Columns.Add(new DataColumn(Titulos.Habilidades, typeof(string)));
+                dadosDaTabela.Columns.Add(new DataColumn(Titulos.NomeHabilidades, typeof(string)));
+                dadosDaTabela.Columns.Add(new DataColumn(Titulos.ComandoHabilidades, typeof(string)));
+                dadosDaTabela.Columns.Add(new DataColumn(Titulos.DescricaoHabilidades, typeof(string)));
+                dadosDaTabela.Columns.Add(new DataColumn(Titulos.NomeSkins, typeof(string)));
+                dadosDaTabela.Columns.Add(new DataColumn(Titulos.SkinsHabilitada, typeof(string)));
 
                 //Lendo Todas as linhas do arquivo CSV
-                string[] Linha = File.ReadAllLines(this.file);
+                string[] Linha = File.ReadAllLines(criarArquivos.lerArquivo());
 
                 //Percorrer todas as linhas
                 for (int i = 0; i < Linha.Length; i++)
                 {
                     //Aqui Estamos pegando a linha atual, e separando os campos
                     //Por exemplo, ele vai lendo um texto, e quando achar um ponto e virgula
-                    //ele pega o texto e joga na outra posição do array temp, e assim por diante
+                    //ele pega o texto e joga na outra posição do array, e assim por diante
                     //até chegar no final da linha
                     string[] campos = Linha[i].Split(Convert.ToChar(";"));
 
@@ -54,11 +63,6 @@ namespace GestaoPersonagenLOL
                         {
                             //Criando uma coluna
                             DataColumn colunas = new DataColumn();
-
-                            //coluna.Columns["Column1"].HeaderText = Titulos.Nome;
-                            //coluna.HeaderText = campos[1] = Titulos.Funcao;
-                            //coluna.HeaderText = campos[2] = Titulos.Dificuldade;
-                            //coluna.HeaderText = campos[3] = Titulos.Descricao;
 
                             //Adicionando a coluna criada ao datatable
                             dadosDaTabela.Columns.Add(colunas);
@@ -79,10 +83,15 @@ namespace GestaoPersonagenLOL
                 dataGridView1.Columns[1].HeaderText = Titulos.Funcao;
                 dataGridView1.Columns[2].HeaderText = Titulos.Dificuldade;
                 dataGridView1.Columns[3].HeaderText = Titulos.Descricao;
-                dataGridView1.Columns[4].HeaderText = Titulos.Habilidades;
+                dataGridView1.Columns[4].HeaderText = Titulos.NomeHabilidades;
+                dataGridView1.Columns[5].HeaderText = Titulos.ComandoHabilidades;
+                dataGridView1.Columns[6].HeaderText = Titulos.DescricaoHabilidades;
+                dataGridView1.Columns[7].HeaderText = Titulos.NomeSkins;
+                dataGridView1.Columns[8].HeaderText = Titulos.SkinsHabilitada;
 
-            }
+            }           
 
         }
+
     }
 }

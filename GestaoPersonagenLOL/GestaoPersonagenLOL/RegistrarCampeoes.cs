@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
 
@@ -10,16 +11,17 @@ namespace GestaoPersonagenLOL
     public class RegistrarCampeoes : CampeaoInterface
     {
 
-        // Extensiação da Interface Campeao 
+        // Criação de variável do tipo das classes.
         private Campeao dadosCampeao;
         private Habilidade habilidade;
+        private Skin skin;
+
 
         //StringBuilder para concatenar as informacoes, por exemplo, titulo, titulo2 ou informacoes dos dados dos campeaoes.
         StringBuilder concatenarString = new StringBuilder();
 
-        //Mostrar em qual diretorio sera salvo e indicar o nome que quer seja salvo.
-        String file = @"D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\dadosDosCampeaos.csv";
-
+        /*Validação de criação de diretório e criação e sugestao de nome para o arquivo csv*/
+        CriarArquivos criarArquivos = new CriarArquivos();
 
         //Utilizado para separar informacoes por ponto e virgula.
         /* Definido como ponto e virgula pora questoes de padrao do excel, 
@@ -29,10 +31,11 @@ namespace GestaoPersonagenLOL
 
 
         // Contrutor da classe CampeaoController com inserção dos objetos parametrizado.
-        public RegistrarCampeoes(Campeao dadosCampeao, Habilidade habilidade)
+        public RegistrarCampeoes(Campeao dadosCampeao, Habilidade dadosHabilidade, Skin dadosSkins )
         {
             this.dadosCampeao = dadosCampeao;
-            this.habilidade = habilidade;
+            this.habilidade = dadosHabilidade;
+            this.skin = dadosSkins;
 
         }
 
@@ -41,21 +44,30 @@ namespace GestaoPersonagenLOL
         public void registrarCampeoes()
         {
             try
-            { 
-                //Execucao dos getters nos dados para atribuir a uma varivel do tipo list.
-                string[] dadosCampeoes = {
-                    dadosCampeao.getNome(),
-                    dadosCampeao.getFuncao(),
-                    dadosCampeao.getDificuldade(),
-                    dadosCampeao.getDescricao(),
-                    habilidade.getNomeHabilidade(),
-                };
+            {
+                if(this.dadosCampeao != null || this.habilidade != null || this.skin != null)
+                {
 
-                this.concatenarString.AppendLine(string.Join(this.separador, dadosCampeoes));
 
-                File.AppendAllText(this.file, this.concatenarString.ToString());
+                    string[] dadosCampeoes = {
+                            dadosCampeao.getNome(),
+                            dadosCampeao.getFuncao(),
+                            dadosCampeao.getDificuldade(),
+                            dadosCampeao.getDescricao(),
+                            habilidade.getNomeHabilidade(),
+                            habilidade.getComandoHabilidade(),
+                            habilidade.getDescricaoHabilidade(),
+                            skin.getNomeSkins(),
+                            skin.getSkinsHabilitada()                        
+                    };
+                    
 
-                MessageBox.Show("Campeão cadastrado! ");
+                    this.concatenarString.AppendLine(string.Join(this.separador, dadosCampeoes));
+
+                    File.AppendAllText(criarArquivos.lerArquivo(), this.concatenarString.ToString());
+
+                    MessageBox.Show("Campeão cadastrado! ");
+                }
 
             } catch (Exception ex) {
 

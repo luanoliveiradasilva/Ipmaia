@@ -6,11 +6,35 @@ using System.Threading.Tasks;
 
 namespace GestaoPersonagenLOL
 {
-    internal class Skin
+    public class Skin
     {
 
         private string nomeSkins;
-        private string descricaoSkins;
-        private bool skinsHabilitada;
+        private string skinsHabilitada;
+
+
+        public void setNomeSkins(string nomeSkins)
+        {
+            this.nomeSkins = nomeSkins;
+        }
+
+        public string getNomeSkins()
+        {
+            return this.nomeSkins;
+        }
+
+        public void setSkinsHabilitada(string skinsHabilitada)
+        {
+            this.skinsHabilitada = skinsHabilitada;
+        }
+
+        public string getSkinsHabilitada()
+        {
+            return this.skinsHabilitada;
+        }
     }
+
+
+
+
 }
