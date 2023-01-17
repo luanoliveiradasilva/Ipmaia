@@ -1,0 +1,2 @@
+Bananas|Frutas e Legumes|Para comer.|2
+Agua|Bebidas e Garrafeira|Para beber.|1

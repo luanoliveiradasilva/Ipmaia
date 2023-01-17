@@ -1,0 +1,39 @@
+G:\desenv\Jogos digitais - ipmaia\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\bin\Debug\GestaoPersonagenLOL.exe.config
+G:\desenv\Jogos digitais - ipmaia\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\bin\Debug\GestaoPersonagenLOL.exe
+G:\desenv\Jogos digitais - ipmaia\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\bin\Debug\GestaoPersonagenLOL.pdb
+G:\desenv\Jogos digitais - ipmaia\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.csproj.AssemblyReference.cache
+G:\desenv\Jogos digitais - ipmaia\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.csproj.SuggestedBindingRedirects.cache
+G:\desenv\Jogos digitais - ipmaia\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.Properties.Resources.resources
+G:\desenv\Jogos digitais - ipmaia\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.csproj.GenerateResource.cache
+G:\desenv\Jogos digitais - ipmaia\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.csproj.CoreCompileInputs.cache
+G:\desenv\Jogos digitais - ipmaia\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.exe
+G:\desenv\Jogos digitais - ipmaia\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.pdb
+G:\desenv\Jogos digitais - ipmaia\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.CampeaoForm.resources
+G:\desenv\Jogos digitais - ipmaia\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.Main.resources
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\bin\Debug\GestaoPersonagenLOL.exe
+C:\Users\ddkao\Desktop\M2 Programaçao\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\bin\Debug\GestaoPersonagenLOL.exe.config
+C:\Users\ddkao\Desktop\M2 Programaçao\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\bin\Debug\GestaoPersonagenLOL.exe
+C:\Users\ddkao\Desktop\M2 Programaçao\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\bin\Debug\GestaoPersonagenLOL.pdb
+C:\Users\ddkao\Desktop\M2 Programaçao\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.csproj.AssemblyReference.cache
+C:\Users\ddkao\Desktop\M2 Programaçao\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.csproj.SuggestedBindingRedirects.cache
+C:\Users\ddkao\Desktop\M2 Programaçao\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.CampeaoController.resources
+C:\Users\ddkao\Desktop\M2 Programaçao\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.CampeaoForm.resources
+C:\Users\ddkao\Desktop\M2 Programaçao\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.Form1.resources
+C:\Users\ddkao\Desktop\M2 Programaçao\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.Properties.Resources.resources
+C:\Users\ddkao\Desktop\M2 Programaçao\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.csproj.GenerateResource.cache
+C:\Users\ddkao\Desktop\M2 Programaçao\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.csproj.CoreCompileInputs.cache
+C:\Users\ddkao\Desktop\M2 Programaçao\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.exe
+C:\Users\ddkao\Desktop\M2 Programaçao\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.pdb
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\bin\Debug\GestaoPersonagenLOL.exe.config
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.csproj.AssemblyReference.cache
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.csproj.SuggestedBindingRedirects.cache
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.RegistrarCampeoes.resources
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.CampeaoForm.resources
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.Properties.Resources.resources
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.csproj.GenerateResource.cache
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.csproj.CoreCompileInputs.cache
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.exe
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.pdb
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\bin\Debug\GestaoPersonagenLOL.pdb
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.Main.resources
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.Form2.resources
