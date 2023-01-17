@@ -36,3 +36,4 @@ D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPerso
 D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.pdb
 D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\bin\Debug\GestaoPersonagenLOL.pdb
 D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.Main.resources
+D:\Documents\Jogos Digitais\Programação\Ipmaia\GestaoPersonagenLOL\GestaoPersonagenLOL\obj\Debug\GestaoPersonagenLOL.Form2.resources

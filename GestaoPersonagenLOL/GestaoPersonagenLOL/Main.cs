@@ -3,6 +3,8 @@ using System.IO;
 using System.Data;
 using System.Windows.Forms;
 using System.Drawing.Text;
+using System.Collections.Generic;
+using System.Collections;
 
 namespace GestaoPersonagenLOL
 {
@@ -14,6 +16,7 @@ namespace GestaoPersonagenLOL
         }
 
         CriarArquivos criarArquivos = new CriarArquivos();
+        private string valorDataGrid;
 
         private void campeaoToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -35,11 +38,7 @@ namespace GestaoPersonagenLOL
                 
                 //Criando um DataTable
                 DataTable dadosDaTabela = new DataTable();
-                dadosDaTabela.Columns.Add(new DataColumn(Titulos.NomeHabilidades, typeof(string)));
-                dadosDaTabela.Columns.Add(new DataColumn(Titulos.ComandoHabilidades, typeof(string)));
-                dadosDaTabela.Columns.Add(new DataColumn(Titulos.DescricaoHabilidades, typeof(string)));
-                dadosDaTabela.Columns.Add(new DataColumn(Titulos.NomeSkins, typeof(string)));
-                dadosDaTabela.Columns.Add(new DataColumn(Titulos.SkinsHabilitada, typeof(string)));
+
 
                 //Lendo Todas as linhas do arquivo CSV
                 string[] Linha = File.ReadAllLines(criarArquivos.lerArquivo());
@@ -88,10 +87,28 @@ namespace GestaoPersonagenLOL
                 dataGridView1.Columns[6].HeaderText = Titulos.DescricaoHabilidades;
                 dataGridView1.Columns[7].HeaderText = Titulos.NomeSkins;
                 dataGridView1.Columns[8].HeaderText = Titulos.SkinsHabilitada;
-
             }           
 
         }
 
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            string valorDataGrids;
+            List<string> valoresDosGrids = new List<string>();
+
+
+            for (int i=0; i < 9 ; i++)
+            {
+                valorDataGrids = dataGridView1.CurrentRow.Cells[i].Value.ToString();
+                valoresDosGrids.Add(valorDataGrids);
+            };
+
+
+            Form2 teste = new Form2(valoresDosGrids);
+
+            teste.Show();
+
+        }
     }
 }
