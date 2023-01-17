@@ -110,5 +110,42 @@ namespace GestaoPersonagenLOL
             teste.Show();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (File.Exists(criarArquivos.lerArquivo()))
+                {
+
+                    string strExport = "";
+
+                    foreach (DataGridViewRow dr in dataGridView1.Rows)
+                    {
+                        foreach (DataGridViewCell dc in dr.Cells)
+                        {
+                            if (dc.Value != null)
+                            {
+
+                                strExport += dc.Value.ToString() + ";";
+                                
+                            }
+                        }
+                        strExport += Environment.NewLine.ToString();
+                    }
+
+                    strExport = strExport.Substring(0, strExport.Length - 3) + Environment.NewLine.ToString();
+                    TextWriter tw = new StreamWriter(criarArquivos.lerArquivo());
+                    tw.Write(strExport);
+
+                    MessageBox.Show("Dados atualizado com sucesso!");
+
+                    tw.Close();
+                }
+            }catch {
+                MessageBox.Show("Falha ao atualizar todos os dados.");
+            }      
+
+        }
     }
 }
